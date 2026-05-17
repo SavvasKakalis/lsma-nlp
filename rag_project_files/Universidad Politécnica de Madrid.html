@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://www.upm.es/favicon.ico">
+  <link rel="stylesheet" href="/themes/comun/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/themes/comun/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/themes/comun/css/style.css?20240930">
+  <link rel="stylesheet" href="/themes/comun/css/print.css" media="print">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+        <script src="/themes/comun/js/jquery-1.11.1.min.js"></script>
+  <script src="/themes/comun/js/bootstrap.min.js"></script>
+  <script src="/themes/comun/js/upm.min.js"></script>
+        <title>Universidad Politécnica de Madrid</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10874068-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-10874068-3');
+  </script>
+  </head>
+<body>
+<!--INICIO MENUS ACCESIBILIDAD-->
+<div id="skip"><a href="#contenido">Saltar a contenido</a></div>
+<div id="accesKeyMenu">
+  <ul>
+    <li><a class="topMenuActionClose_ac" href="http://www.upm.es/institucional/UPM/WebUPM/Accesibilidad" accesskey="0">Accesibilidad</a></li>
+    <li><a href="/" accesskey="1">Home</a></li>
+    <li><a href="#contenido" accesskey="2">Ppal</a></li>
+    <li><a href="#form_buscador_rapido" accesskey="3">Buscador</a></li>
+      </ul>
+</div><!--/.accesKeyMenu-->
+<!--/FIN MENUS ACCESIBILIDAD-->
+<style>
+	#headerUPM {
+		width: 100%;
+		overflow: hidden;
+		background-color: #26447a;
+	}
+	#headerUPM span {
+		font-size:1.1em;
+		text-transform: uppercase;
+		color:white;
+		padding-left: 0.5em;
+	}
+	#headerUPM .box {
+		display: flex;
+		align-items:center;
+		padding: 0.2em 0;
+	}
+	#iconMenuMobile {
+		float: right;
+	}
+	#iconMenuMobile > span {
+		font-size: 2em;
+		color: white;
+		float: right;
+	}
+	.canales > .row {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+	#logoEELISA, #logoCrueConUcrania{
+		float: right;
+		margin-top: 1em;
+		margin-left: 1em;
+		max-height: 30px;
+	}
+	#cresponCanalesCabeceraUPM {
+		height: 50px;
+		float: right;
+	}
+	.language {
+		display: inline-block;
+		padding-right: 1em;
+		color: white;
+		cursor: pointer;
+		float: right;
+		margin: 0;
+	}
+	.language > ul {
+		position: relative;
+		float: none;
+		min-width: auto;"
+	}
+	.listLanguages > a{
+		padding: 0.2em 0.8em;
+	}
+	.lang {
+		/*Para centrar el span a la derecha*/
+		display: table;
+		margin: 0 0 0 auto;
+	}
+	.code {
+		padding: 0.2em;
+		background-color: transparent;
+		color: white;
+		border-radius: 3px;
+		margin-right: 0.2em;
+		text-transform: uppercase;
+	}
+
+	@media (min-width: 768px) {
+		#navCanalesCabeceraUPM {
+			display: contents !important;
+		}
+		#tipoCabecera {
+			display: flex;
+		}
+		#tipoCabecera > div {
+			align-self: center;
+		}
+	}
+
+	@media (max-width: 768px) {
+		#headerUPM img{
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+			display: block;
+		}
+		#headerUPM span{
+			display: none;
+		}
+		#logoEELISA, #logoCrueConUcrania {
+			display: none;
+		}
+	}
+
+</style>
+
+
+ <header id="headerUniversidad">
+  <div class="wrapper">
+    <div class="row" id="tipoCabecera">
+      <div class="col-xs-12 col-sm-7">
+                              <a href="/">
+                            <div class="logo">
+                <img class="img-responsive" src="/themes/comun/logos/institucional.png"
+                     alt="Universidad Politécnica de Madrid">
+              </div>
+            </a>
+                          <div class="cabecera">
+                                                                                                      <h1>
+                    Universidad<br/>
+                    Politécnica de Madrid
+                  </h1>
+                            </div><!--/.cabecera-->
+            <div id="iconMenuMobile" class="col-xs-2 visible-xs">
+              <span class="fa fa-bars"></span>
+            </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-5 canales">
+            <div class="row">
+    <nav id="navCanalesCabeceraUPM">
+      <ul>
+                                                <li><a href="https://www.upm.es/Estudiantes/Estudios_Titulaciones" >Estudios y Titulaciones</a></li>
+              
+                                                          <li><a href="https://www.upm.es/UPM/SalaPrensa" >Sala de Prensa</a></li>
+              
+                                                          <li><a href="https://www.upm.es/internacional" lang="en">English</a></li>
+              
+                                                          <li><a href="https://sede.upm.es" >Sede Electrónica</a></li>
+              
+                        </ul>
+    </nav>
+  </div>
+
+
+
+        <div class="row">
+                    </div>
+
+                      <div class="row">
+                              <a href="https://www.upm.es/UPM/EELISA" alt="eelisa">
+                <img class="img-responsive" id="logoEELISA"
+                     src="/themes/comun/logos/eelisa2024.png" alt="EELISA European University">
+              </a>
+              <a href="https://www.upm.es/e-politecnica/?p=11803" alt="newsleter"><img class="img-responsive" id="logoCrueConUcrania" src="/themes/comun/logos/CrueConUcrania.png" alt="Universidades Españolas con Ucrania"></a>
+                
+            </div>
+          
+
+
+
+                                                                                                                                                                                                                  
+
+                                                                                                                                                                                                              </div><!--/col-sm-5 .canales-->
+
+    </div><!--/row-->
+  </div><!--/.wrapper-->
+</header>
+
+
+<nav id="menuPrincipal">
+  <div class="wrapper">
+    <ul>
+      
+                                                                                                                                                                                          
+                        <li class="checked">
+      <a href="/UPM">UPM</a>
+      <span class ="separador"></span>      </li>
+                                    <li>
+      <a href="/Estudiantes">Estudiantes</a>
+      <span class ="separador"></span>      </li>
+                                    <li>
+      <a href="/FuturosEstudiantes">Futuros Estudiantes</a>
+      <span class ="separador"></span>      </li>
+                                    <li>
+      <a href="/Personal">Personal</a>
+      <span class ="separador"></span>      </li>
+                                    <li>
+      <a href="/Investigacion">Investigación</a>
+            </li>
+                      </ul>
+  </div><!--/.wrapper-->
+</nav><!--/#menuPrincipal-->
+
+
+
+<link rel="stylesheet" href="/themes/comun/css/style_segundoNivel.css">
+
+<nav id="menuMobile">
+		<ul>
+																	<li>
+					<a   class="desplegable"  href="/UPM/Historia"  >
+						<span class="numeracion">
+						01.
+						</span>
+						Historia
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																<ul class="submenu">
+																																	<li ><a   href="/UPM/Historia/ResenaHistorica"  >Reseña Histórica</a></li>
+																																																		<li ><a   href="/UPM/Historia/Rectores"  >Rectores</a></li>
+																																																		<li ><a   href="/UPM/Historia/HonorisCausa"  >Doctores Honoris Causa</a></li>
+																																																		<li ><a   href="/UPM/Historia/MedallasAgustinBetancourt"  >Medallas Agustín de Betancourt</a></li>
+																																																		<li ><a   href="/UPM/Historia/PersonajesIlustres"  >Personajes Ilustres de la UPM</a></li>
+																																																														</ul>
+											 
+				</li>
+																								<li>
+					<a    href="/UPM/Organigrama"  >
+						<span class="numeracion">
+						02.
+						</span>
+						Organigrama
+											</a>
+						 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/Organos"  >
+						<span class="numeracion">
+						03.
+						</span>
+						Órganos de Gobierno
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																									<ul class="submenu">
+																																	<li ><a   href="/UPM/Organos/Claustro"  >Claustro Universitario</a></li>
+																																																		<li ><a   href="/UPM/Organos/ConsejoGobierno"  >Consejo de Gobierno</a></li>
+																																																		<li ><a   href="/UPM/Organos/Elecciones"  >Elecciones</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a  href="https://web.upm.es/defensoriauniversitaria/" >
+						<span class="numeracion">
+						04.
+						</span>
+						Defensoría Universitaria
+											</a>
+						 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/Centros"  >
+						<span class="numeracion">
+						05.
+						</span>
+						Centros y Campus Universitarios
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																												<ul class="submenu">
+																																	<li ><a   href="/UPM/Centros/PlanosAccesoCentros"  >Planos de Acceso a Centros</a></li>
+																																																		<li ><a   href="/UPM/Centros/ServicioAutobusUPM"  >Servicio autobús UPM</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a    href="/UPM/Departamentos"  >
+						<span class="numeracion">
+						06.
+						</span>
+						Departamentos
+											</a>
+						 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/NormativaLegislacion"  >
+						<span class="numeracion">
+						07.
+						</span>
+						Normativa y Legislación
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																												<ul class="submenu">
+																																	<li ><a   href="/UPM/NormativaLegislacion/LegislacionNormativa"  >Legislación y Normativa</a></li>
+																																																		<li ><a   href="/UPM/NormativaLegislacion/ActuacionesRegulaciones"  >Actuaciones y Regulaciones Específicas</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/ConsejoSocial"  >
+						<span class="numeracion">
+						08.
+						</span>
+						Consejo Social
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																																							<ul class="submenu">
+																																	<li ><a   href="/UPM/ConsejoSocial/CompetenciasMarcoJuridico"  >Competencias y Marco Jurídico</a></li>
+																																																		<li ><a   href="/UPM/ConsejoSocial/OrganizacionComposicion"  >Organización, composición y funcionamiento</a></li>
+																																																		<li ><a   href="/UPM/ConsejoSocial/ParticipacionOtrosOrganos"  >Participación en otros órganos</a></li>
+																																																		<li ><a   href="/UPM/ConsejoSocial/Actividades"  >Actividades y publicaciones</a></li>
+																																																		<li ><a   href="/UPM/ConsejoSocial/Documentacion"  >Memorias e Información Económica</a></li>
+																																																																																																																		<li ><a   href="/UPM/ConsejoSocial/Enlaces"  >Enlaces de Interés</a></li>
+																																																		<li ><a   href="/UPM/ConsejoSocial/Direccion"  >Dirección</a></li>
+																														</ul>
+											 
+				</li>
+																													<li>
+					<a   class="desplegable"  href="/UPM/BoletinOficial"  >
+						<span class="numeracion">
+						09.
+						</span>
+						Boletín Oficial
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																															<ul class="submenu">
+																																	<li ><a   href="/UPM/BoletinOficial/Anteriores"  >Años anteriores</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/DatosEconomicos"  >
+						<span class="numeracion">
+						10.
+						</span>
+						Datos Económicos
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																												<ul class="submenu">
+																																	<li ><a href="http://www.upm.es/transparencia/#economico" >Portal de Transparencia</a></li>
+																																																		<li ><a   href="/UPM/DatosEconomicos/sedeElectronica"  >Sede Electrónica</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/PoliticasIgualdad"  >
+						<span class="numeracion">
+						11.
+						</span>
+						Políticas de Igualdad
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																																																																																											<ul class="submenu">
+																																																																																																																																																																																																																</ul>
+											 
+				</li>
+																								<li>
+					<a    href="/UPM/Fundaciones"  >
+						<span class="numeracion">
+						12.
+						</span>
+						Fundaciones de la Universidad
+											</a>
+						 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/CompromisoSocial"  >
+						<span class="numeracion">
+						13.
+						</span>
+						Compromiso Social y Medioambiental
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																													<ul class="submenu">
+																																																<li ><a   href="/UPM/CompromisoSocial/CooperacionDesarrollo"  >Cooperación para el desarrollo</a></li>
+																																																																	<li ><a   href="/UPM/CompromisoSocial/UAD"  >Unidad de Accesibilidad y Atención a la Discapacidad</a></li>
+																																																		<li ><a   href="/UPM/CompromisoSocial/Voluntariado"  >Voluntariado</a></li>
+																																																		<li ><a href="https://sostenibilidad.upm.es/" >Sostenibilidad y Objetivos de Desarrollo Sostenible</a></li>
+																																																		<li ><a href="https://blogs.upm.es/upmrefugiados/" >Atención al Refugiado</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/Accion_Social"  >
+						<span class="numeracion">
+						14.
+						</span>
+						Acción Social
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																																																				<ul class="submenu">
+																																	<li ><a   href="/UPM/Accion_Social/PrestacionesSociales"  >Prestaciones Sociales</a></li>
+																																																		<li ><a   href="/UPM/Accion_Social/Plan de Pensiones del Sistema de Empleo"  >Plan de Pensiones del Sistema de Empleo</a></li>
+																																																		<li ><a   href="/UPM/Accion_Social/AyudaTransporte"  >Ayuda al transporte</a></li>
+																																																		<li ><a   href="/UPM/Accion_Social/Compensacion"  >Ayuda de Compensación de Matrícula</a></li>
+																																																		<li ><a   href="/UPM/Accion_Social/CampamentosUrbanos"  >Campamentos Urbanos UPM</a></li>
+																																																		<li ><a   href="/UPM/Accion_Social/OfertasCampamentosVerano"  >Ofertas de Campamentos de verano</a></li>
+																																																																																		<li ><a   href="/UPM/Accion_Social/CharlasColaboraciones"  >Charlas y Colaboraciones</a></li>
+																																																		<li ><a   href="/UPM/Accion_Social/Ofertas"  >Ofertas de Acción Social</a></li>
+																																																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/SalaPrensa"  >
+						<span class="numeracion">
+						15.
+						</span>
+						Sala de Prensa
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																																																																																																																																																																																																																																										<ul class="submenu">
+																																	<li ><a   href="/UPM/SalaPrensa/Contacto"  >Contacto para Medios de Comunicación</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/Noticias"  >Noticias</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/Noticias_de_investigacion"  >Noticias de Investigación</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/RedesSociales"  >Redes Sociales</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/Weblog"  >Blog</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/epolitecnica_inv"  >E-Politécnica Investigación e Innovación</a></li>
+																																																		<li ><a href="http://eventos.upm.es/" >Agenda</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/VideosInstitucionales"  >Vídeos Institucionales</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/CanalUPMYouTube"  >Canal UPM en YouTube</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/IdentidadGrafica"  >Identidad Gráfica de la UPM</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/CartasServicios"  >Cartas de Servicios</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/UPMComic"  >UPMComic</a></li>
+																																																																																																																																																																																																																									<li ><a   href="/UPM/SalaPrensa/UPMCifras"  >UPM en Cifras</a></li>
+																																																		<li ><a   href="/UPM/SalaPrensa/Newsletters"  >Newsletters</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/Biblioteca"  >
+						<span class="numeracion">
+						16.
+						</span>
+						Biblioteca Universitaria
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																										<ul class="submenu">
+																																	<li ><a   href="/UPM/Biblioteca/NuestraBiblioteca"  >Nuestra Biblioteca</a></li>
+																																																		<li ><a   href="/UPM/Biblioteca/RecursosInformacion"  >Recursos de información</a></li>
+																																																		<li ><a   href="/UPM/Biblioteca/ServiciosUsuario"  >Servicios a las personas usuarias</a></li>
+																																																																																																														<li ><a   href="/UPM/Biblioteca/SostenibilidadODS"  >Sostenibilidad</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/Actividades_Culturales"  >
+						<span class="numeracion">
+						17.
+						</span>
+						Actividades Culturales
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																<ul class="submenu">
+																																																																														<li ><a   href="/UPM/Actividades_Culturales/Coro_UPM"  >Coro UPM</a></li>
+																																																		<li ><a   href="/UPM/Actividades_Culturales/Acceso_Actividades"  >Acceso a las actividades</a></li>
+																																																		<li ><a   href="/UPM/Actividades_Culturales/Aula_Cultura"  >Aula de Cultura</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/Deportes"  >
+						<span class="numeracion">
+						18.
+						</span>
+						Actividades Deportivas
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																												<ul class="submenu">
+																																											</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/MuseosUPM"  >
+						<span class="numeracion">
+						19.
+						</span>
+						Museos y Colecciones UPM
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																																																																																																																																																																																																																<ul class="submenu">
+																																	<li ><a   href="/UPM/MuseosUPM/Arboreto"  >Arboreto</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/AulaMuseoConstruccion"  >Aula-museo de la construcción</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/matematicas"  >Aula-taller-museo de las matemáticas</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/BancoGermoplasmaVegetal"  >Banco de Germoplasma Vegetal</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/CartotecaProfesor"  >Cartoteca profesor "Martín López"</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/ColeccionMaderas"  >Colección de maderas</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/ColeccionZoologia"  >Colección de zoología</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/ColeccionEntomologica"  >Colección entomológica</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/HerbarioEMMAETSIMontes"  >Herbario EMMA (ETSI Montes)</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/HerbarioColeccionDidacticaBotanicaMAA"  >Herbario y colección didáctica de botánica MAA (ETSIAAB)</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/InformaticaVintage"  >Museo Informática Vintage</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoJoaquinSerna"  >Museo "Joaquín Serna"</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoTorresQuevedo"  >Museo Torres Quevedo</a></li>
+																																																																																		<li ><a   href="/UPM/MuseosUPM/museoGeologia"  >Museo de Geología Aplicada</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoInstrumentosTopograficos"  >Museo de instrumentos topográficos</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoTelecomunicaciones"  >Museo de Telecomunicaciones (ETSIST)</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoINEF"  >Museo del INEF</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoHistoricoInformatica"  >Museo histórico de la informática</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoHistoricoMinero"  >Museo histórico-minero "Don Felipe de Borbón y Grecia"</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/MuseoTecnologico"  >Museo Tecnológico</a></li>
+																																																		<li ><a   href="/UPM/MuseosUPM/Piscifactoria"  >Piscifactoría</a></li>
+																														</ul>
+											 
+				</li>
+																																							<li>
+					<a   class="desplegable"  href="/UPM/ResidenciasUniversitarias"  >
+						<span class="numeracion">
+						20.
+						</span>
+						Residencias Universitarias
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																												<ul class="submenu">
+																																	<li ><a   href="/UPM/ResidenciasUniversitarias/LucasOlazabal"  >Residencia Lucas Olazábal</a></li>
+																																																		<li ><a   href="/UPM/ResidenciasUniversitarias/GomezPardo"  >Residencia Universitaria Gómez Pardo</a></li>
+																														</ul>
+											 
+				</li>
+																								<li>
+					<a    href="/UPM/OficinaDato"  >
+						<span class="numeracion">
+						21.
+						</span>
+						Oficina del Dato
+											</a>
+						 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/Inteligencia"  >
+						<span class="numeracion">
+						22.
+						</span>
+						Inteligencia Institucional
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																						<ul class="submenu">
+																																	<li ><a   href="/UPM/Inteligencia/QueEsInteligenciaInstitucional"  >¿Qué es la Inteligencia Institucional?</a></li>
+																																																		<li ><a href="http://www.upm.es/Investigacion/estructuras/ObservatorioIDi" >Observatorio I+D+i</a></li>
+																																																		<li ><a   href="/UPM/Inteligencia/ObservatorioAcademico"  >Observatorio Académico</a></li>
+																																																		<li ><a   href="/UPM/Inteligencia/Informes"  >Informes del Observatorio Académico</a></li>
+																														</ul>
+											 
+				</li>
+																																				<li>
+					<a   class="desplegable"  href="/UPM/Calidad"  >
+						<span class="numeracion">
+						23.
+						</span>
+						Calidad
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																																							<ul class="submenu">
+																																	<li ><a   href="/UPM/Calidad/premio"  >Premios a la Calidad</a></li>
+																																																		<li ><a   href="/UPM/Calidad/CalidadCentros"  >Calidad en los Centros</a></li>
+																																																		<li ><a   href="/UPM/Calidad/CalidadTitulaciones"  >Calidad en las Titulaciones</a></li>
+																																																		<li ><a   href="/UPM/Calidad/CalidadServicios"  >Calidad en los Servicios</a></li>
+																																																		<li ><a href="http://www.upm.es/Personal/PDI/Docentia" >Calidad en la Docencia</a></li>
+																																																		<li ><a   href="/UPM/Calidad/ModeloUPM"  >Sistema de Calidad Modelo UPM</a></li>
+																																																		<li ><a   href="/UPM/Calidad/UnidadCalidad"  >Unidad de Calidad</a></li>
+																																																		<li ><a   href="/UPM/Calidad/BQSF"  >Buzón de Quejas, Sugerencias y Felicitaciones</a></li>
+																																													</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/ServiciosTecnologicos"  >
+						<span class="numeracion">
+						24.
+						</span>
+						Servicios Tecnológicos
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																																																																																																																																																																																																																																																											<ul class="submenu checked">
+																																	<li ><a   href="/UPM/ServiciosTecnologicos/Normativa"  >Normativa de aplicación</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/CuentasUPM"  >Cuentas UPM</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/TelefoniaMovilCorporativa"  >Telefonía Móvil Corporativa</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/SeguridadInformatica"  >Seguridad Informática</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/SIU"  >Sistema de Identificación Única</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/wifi"  >Red WiFi</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/vpn"  >UPMvpn</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/UPMdrive"  >UPMdrive</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/email"  >Correo electrónico</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/ServiciosRed"  >Servicios de Red</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/administracionUPM"  >administracionUPM</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/escritorioUPM"  >escritorioUPM</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/PortalSW"  >Portal de Software</a></li>
+																																																		<li class="checked"><a   href="/UPM/ServiciosTecnologicos/Office365"  >Office 365</a></li>
+																																																																																		<li ><a   href="/UPM/ServiciosTecnologicos/Automatricula"  >Automatrícula</a></li>
+																																																		<li ><a   href="/UPM/ServiciosTecnologicos/intranet"  >Nueva Intranet</a></li>
+																																																														</ul>
+											 
+				</li>
+																								<li>
+					<a   class="desplegable"  href="/UPM/EELISA"  >
+						<span class="numeracion">
+						25.
+						</span>
+						EELISA
+												<span class="glyphicon glyphicon-play flechaAbrir" aria-hidden="true"></span>
+											</a>
+																																												<ul class="submenu">
+																																																																													</ul>
+											 
+				</li>
+																								<li>
+					<a    href="/UPM/PRTR"  >
+						<span class="numeracion">
+						26.
+						</span>
+						Plan de Recuperación, Transformación y Resiliencia
+											</a>
+						 
+				</li>
+														</ul>
+
+																																						
+	<ul class="canales">
+					<li><a href="https://www.upm.es/Estudiantes/Estudios_Titulaciones">Estudios y Titulaciones</a></li>
+							<li><a href="https://www.upm.es/UPM/SalaPrensa">Sala de Prensa</a></li>
+							<li><a href="https://www.upm.es/internacional">English</a></li>
+							<li><a href="https://sede.upm.es">Sede Electrónica</a></li>
+			</ul>
+
+</nav><!--/#menuMobile-->
+<section id="caminoMigas">
+  <div class="wrapper">
+
+    <ul>
+            <li><span class="glyphicon glyphicon-play"></span></li>
+                                    <li>
+                <a href="/UPM">UPM</a>
+                      </li>
+                        <li>
+        /        <a href="/UPM/ServiciosTecnologicos">Servicios Tecnológicos</a>
+                      </li>
+                        <li>
+        /        Office 365
+                      </li>
+                      </ul>
+
+  </div><!--wrapper-->
+</section><!--/#caminoMigas-->
+
+<div id="contenido">
+	<div class="wrapper">
+		<div id="menuLateral" class="col-sm-3">
+			<ul>
+            <li>
+
+    	<a   class="desplegable"  href="/UPM/Historia"  >
+  
+  	<span class="numeracion">
+			01.
+		</span>
+  	Historia
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                              <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Historia/ResenaHistorica"  >Reseña Histórica</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Historia/Rectores"  >Rectores</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Historia/HonorisCausa"  >Doctores Honoris Causa</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Historia/MedallasAgustinBetancourt"  >Medallas Agustín de Betancourt</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Historia/PersonajesIlustres"  >Personajes Ilustres de la UPM</a></li>
+                              </ul>
+      </li>
+              <li>
+
+    	<a    href="/UPM/Organigrama"  >
+  
+  	<span class="numeracion">
+			02.
+		</span>
+  	Organigrama
+  	  	</a>
+  
+    </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/Organos"  >
+  
+  	<span class="numeracion">
+			03.
+		</span>
+  	Órganos de Gobierno
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                  <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Organos/Claustro"  >Claustro Universitario</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Organos/ConsejoGobierno"  >Consejo de Gobierno</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Organos/Elecciones"  >Elecciones</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a  href="https://web.upm.es/defensoriauniversitaria/" >
+  
+  	<span class="numeracion">
+			04.
+		</span>
+  	Defensoría Universitaria
+  	  	</a>
+  
+    </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/Centros"  >
+  
+  	<span class="numeracion">
+			05.
+		</span>
+  	Centros y Campus Universitarios
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+              <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Centros/PlanosAccesoCentros"  >Planos de Acceso a Centros</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Centros/ServicioAutobusUPM"  >Servicio autobús UPM</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a    href="/UPM/Departamentos"  >
+  
+  	<span class="numeracion">
+			06.
+		</span>
+  	Departamentos
+  	  	</a>
+  
+    </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/NormativaLegislacion"  >
+  
+  	<span class="numeracion">
+			07.
+		</span>
+  	Normativa y Legislación
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+              <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/NormativaLegislacion/LegislacionNormativa"  >Legislación y Normativa</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/NormativaLegislacion/ActuacionesRegulaciones"  >Actuaciones y Regulaciones Específicas</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/ConsejoSocial"  >
+  
+  	<span class="numeracion">
+			08.
+		</span>
+  	Consejo Social
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                          <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ConsejoSocial/CompetenciasMarcoJuridico"  >Competencias y Marco Jurídico</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ConsejoSocial/OrganizacionComposicion"  >Organización, composición y funcionamiento</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ConsejoSocial/ParticipacionOtrosOrganos"  >Participación en otros órganos</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ConsejoSocial/Actividades"  >Actividades y publicaciones</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ConsejoSocial/Documentacion"  >Memorias e Información Económica</a></li>
+                                                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ConsejoSocial/Enlaces"  >Enlaces de Interés</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ConsejoSocial/Direccion"  >Dirección</a></li>
+              </ul>
+      </li>
+                  <li>
+
+    	<a   class="desplegable"  href="/UPM/BoletinOficial"  >
+  
+  	<span class="numeracion">
+			09.
+		</span>
+  	Boletín Oficial
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+          <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/BoletinOficial/Anteriores"  >Años anteriores</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/DatosEconomicos"  >
+  
+  	<span class="numeracion">
+			10.
+		</span>
+  	Datos Económicos
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+              <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a href="http://www.upm.es/transparencia/#economico" >Portal de Transparencia</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/DatosEconomicos/sedeElectronica"  >Sede Electrónica</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/PoliticasIgualdad"  >
+  
+  	<span class="numeracion">
+			11.
+		</span>
+  	Políticas de Igualdad
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                                          <ul class="submenu">
+                                                                                                              </ul>
+      </li>
+              <li>
+
+    	<a    href="/UPM/Fundaciones"  >
+  
+  	<span class="numeracion">
+			12.
+		</span>
+  	Fundaciones de la Universidad
+  	  	</a>
+  
+    </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/CompromisoSocial"  >
+  
+  	<span class="numeracion">
+			13.
+		</span>
+  	Compromiso Social y Medioambiental
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                  <ul class="submenu">
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/CompromisoSocial/CooperacionDesarrollo"  >Cooperación para el desarrollo</a></li>
+                                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/CompromisoSocial/UAD"  >Unidad de Accesibilidad y Atención a la Discapacidad</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/CompromisoSocial/Voluntariado"  >Voluntariado</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a href="https://sostenibilidad.upm.es/" >Sostenibilidad y Objetivos de Desarrollo Sostenible</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a href="https://blogs.upm.es/upmrefugiados/" >Atención al Refugiado</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/Accion_Social"  >
+  
+  	<span class="numeracion">
+			14.
+		</span>
+  	Acción Social
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                              <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/PrestacionesSociales"  >Prestaciones Sociales</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/Plan de Pensiones del Sistema de Empleo"  >Plan de Pensiones del Sistema de Empleo</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/AyudaTransporte"  >Ayuda al transporte</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/Compensacion"  >Ayuda de Compensación de Matrícula</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/CampamentosUrbanos"  >Campamentos Urbanos UPM</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/OfertasCampamentosVerano"  >Ofertas de Campamentos de verano</a></li>
+                                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/CharlasColaboraciones"  >Charlas y Colaboraciones</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Accion_Social/Ofertas"  >Ofertas de Acción Social</a></li>
+                              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/SalaPrensa"  >
+  
+  	<span class="numeracion">
+			15.
+		</span>
+  	Sala de Prensa
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                                                                                      <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/Contacto"  >Contacto para Medios de Comunicación</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/Noticias"  >Noticias</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/Noticias_de_investigacion"  >Noticias de Investigación</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/RedesSociales"  >Redes Sociales</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/Weblog"  >Blog</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/epolitecnica_inv"  >E-Politécnica Investigación e Innovación</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a href="http://eventos.upm.es/" >Agenda</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/VideosInstitucionales"  >Vídeos Institucionales</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/CanalUPMYouTube"  >Canal UPM en YouTube</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/IdentidadGrafica"  >Identidad Gráfica de la UPM</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/CartasServicios"  >Cartas de Servicios</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/UPMComic"  >UPMComic</a></li>
+                                                                                                                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/UPMCifras"  >UPM en Cifras</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/SalaPrensa/Newsletters"  >Newsletters</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/Biblioteca"  >
+  
+  	<span class="numeracion">
+			16.
+		</span>
+  	Biblioteca Universitaria
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                      <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Biblioteca/NuestraBiblioteca"  >Nuestra Biblioteca</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Biblioteca/RecursosInformacion"  >Recursos de información</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Biblioteca/ServiciosUsuario"  >Servicios a las personas usuarias</a></li>
+                                                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Biblioteca/SostenibilidadODS"  >Sostenibilidad</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/Actividades_Culturales"  >
+  
+  	<span class="numeracion">
+			17.
+		</span>
+  	Actividades Culturales
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                              <ul class="submenu">
+                                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Actividades_Culturales/Coro_UPM"  >Coro UPM</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Actividades_Culturales/Acceso_Actividades"  >Acceso a las actividades</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Actividades_Culturales/Aula_Cultura"  >Aula de Cultura</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/Deportes"  >
+  
+  	<span class="numeracion">
+			18.
+		</span>
+  	Actividades Deportivas
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+              <ul class="submenu">
+                      </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/MuseosUPM"  >
+  
+  	<span class="numeracion">
+			19.
+		</span>
+  	Museos y Colecciones UPM
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                                                                              <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/Arboreto"  >Arboreto</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/AulaMuseoConstruccion"  >Aula-museo de la construcción</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/matematicas"  >Aula-taller-museo de las matemáticas</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/BancoGermoplasmaVegetal"  >Banco de Germoplasma Vegetal</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/CartotecaProfesor"  >Cartoteca profesor "Martín López"</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/ColeccionMaderas"  >Colección de maderas</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/ColeccionZoologia"  >Colección de zoología</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/ColeccionEntomologica"  >Colección entomológica</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/HerbarioEMMAETSIMontes"  >Herbario EMMA (ETSI Montes)</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/HerbarioColeccionDidacticaBotanicaMAA"  >Herbario y colección didáctica de botánica MAA (ETSIAAB)</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/InformaticaVintage"  >Museo Informática Vintage</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoJoaquinSerna"  >Museo "Joaquín Serna"</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoTorresQuevedo"  >Museo Torres Quevedo</a></li>
+                                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/museoGeologia"  >Museo de Geología Aplicada</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoInstrumentosTopograficos"  >Museo de instrumentos topográficos</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoTelecomunicaciones"  >Museo de Telecomunicaciones (ETSIST)</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoINEF"  >Museo del INEF</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoHistoricoInformatica"  >Museo histórico de la informática</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoHistoricoMinero"  >Museo histórico-minero "Don Felipe de Borbón y Grecia"</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/MuseoTecnologico"  >Museo Tecnológico</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/MuseosUPM/Piscifactoria"  >Piscifactoría</a></li>
+              </ul>
+      </li>
+                          <li>
+
+    	<a   class="desplegable"  href="/UPM/ResidenciasUniversitarias"  >
+  
+  	<span class="numeracion">
+			20.
+		</span>
+  	Residencias Universitarias
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+              <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ResidenciasUniversitarias/LucasOlazabal"  >Residencia Lucas Olazábal</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ResidenciasUniversitarias/GomezPardo"  >Residencia Universitaria Gómez Pardo</a></li>
+              </ul>
+      </li>
+              <li>
+
+    	<a    href="/UPM/OficinaDato"  >
+  
+  	<span class="numeracion">
+			21.
+		</span>
+  	Oficina del Dato
+  	  	</a>
+  
+    </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/Inteligencia"  >
+  
+  	<span class="numeracion">
+			22.
+		</span>
+  	Inteligencia Institucional
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                      <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Inteligencia/QueEsInteligenciaInstitucional"  >¿Qué es la Inteligencia Institucional?</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a href="http://www.upm.es/Investigacion/estructuras/ObservatorioIDi" >Observatorio I+D+i</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Inteligencia/ObservatorioAcademico"  >Observatorio Académico</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Inteligencia/Informes"  >Informes del Observatorio Académico</a></li>
+              </ul>
+      </li>
+                      <li>
+
+    	<a   class="desplegable"  href="/UPM/Calidad"  >
+  
+  	<span class="numeracion">
+			23.
+		</span>
+  	Calidad
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                          <ul class="submenu">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Calidad/premio"  >Premios a la Calidad</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Calidad/CalidadCentros"  >Calidad en los Centros</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Calidad/CalidadTitulaciones"  >Calidad en las Titulaciones</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Calidad/CalidadServicios"  >Calidad en los Servicios</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a href="http://www.upm.es/Personal/PDI/Docentia" >Calidad en la Docencia</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Calidad/ModeloUPM"  >Sistema de Calidad Modelo UPM</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Calidad/UnidadCalidad"  >Unidad de Calidad</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/Calidad/BQSF"  >Buzón de Quejas, Sugerencias y Felicitaciones</a></li>
+                      </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/ServiciosTecnologicos"  >
+  
+  	<span class="numeracion">
+			24.
+		</span>
+  	Servicios Tecnológicos
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+                                                                                  <ul class="submenu blocked">
+                <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/Normativa"  >Normativa de aplicación</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/CuentasUPM"  >Cuentas UPM</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/TelefoniaMovilCorporativa"  >Telefonía Móvil Corporativa</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/SeguridadInformatica"  >Seguridad Informática</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/SIU"  >Sistema de Identificación Única</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/wifi"  >Red WiFi</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/vpn"  >UPMvpn</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/UPMdrive"  >UPMdrive</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/email"  >Correo electrónico</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/ServiciosRed"  >Servicios de Red</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/administracionUPM"  >administracionUPM</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/escritorioUPM"  >escritorioUPM</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/PortalSW"  >Portal de Software</a></li>
+                        <li class="checked"><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/Office365"  >Office 365</a></li>
+                                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/Automatricula"  >Automatrícula</a></li>
+                        <li ><span class="glyphicon glyphicon-play"></span><a   href="/UPM/ServiciosTecnologicos/intranet"  >Nueva Intranet</a></li>
+                              </ul>
+      </li>
+              <li>
+
+    	<a   class="desplegable"  href="/UPM/EELISA"  >
+  
+  	<span class="numeracion">
+			25.
+		</span>
+  	EELISA
+  	  		<span class="glyphicon glyphicon-play  flechaAbrir"></span>
+  	  	</a>
+  
+              <ul class="submenu">
+                                      </ul>
+      </li>
+              <li>
+
+    	<a    href="/UPM/PRTR"  >
+  
+  	<span class="numeracion">
+			26.
+		</span>
+  	Plan de Recuperación, Transformación y Resiliencia
+  	  	</a>
+  
+    </li>
+        </ul>
+																																										</div>
+		<div id="central" class="col-sm-9">
+						<div class="content">
+				<style>
+	ul.sinmarca {
+		list-style-type: none;
+		margin: 0;
+		padding: 0 2em;
+	}
+
+	ul.sinmarca li {
+		margin: 1em 1em 1em 2em;
+		color: #1867B7;
+	}
+
+	ul.sinmarca li span.fa {
+		margin-right: 1em;
+	}
+
+	ul.sinmarca li a {
+		/*color: #1867B7;
+    text-decoration: dotted;
+    text-decoration-color: #acacac;
+    text-decoration-skip: ink;*/
+		border-bottom: 1px solid rgb(24, 103, 183);
+		border-bottom: 1px solid rgba(24, 103, 183, .3);
+		-webkit-background-clip: padding-box; /* for Safari */
+		background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	}
+
+	ul.sinmarca li a:hover {
+		text-decoration: none;
+		border-bottom: 1px solid rgb(24, 103, 183);
+	}
+
+	.rojo {
+		color: red;
+	}
+
+	img.center {
+		display: block;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.center {
+		text-align: center;
+	}
+  span.bold {
+    font-weight: 700;;
+  }
+h4 {
+font-size: 1em;
+}
+</style>
+<div class="row">
+  <div class="col-md-12">
+
+                  <h2 class="destacadoTitulo02">Microsoft 365</h2>
+                  <h3 class="destacadoTitulo03"></h3>
+                          <h3 class="destacadoTitulo03"></h3>
+                          <div class="cuerpo"><p> </p>
+<p>Microsoft 365 es la plataforma de productividad de Microsoft que agrupa aplicaciones de Office y otros servicios habilitados en la nube. </p>
+<p>El Vicerrectorado de Estrategia y Transformación digital pone a  disposición de la comunidad educativa de la UPM algunas de estas herramientas. En la actualidad, ya pueden utilizarse: Microsoft Office 365, OneDrive, Skype Empresarial, SharePoint, Teams y Sway. Posteriormente, y de manera progresiva, se irán incorporando otras aplicaciones de este entorno. En la parte inferior de esta página se facilitan las guías de uso relacionadas con las diferentes aplicaciones.</p>
+<p><br /><strong><span style="text-decoration: underline;">Acceso a Microsoft 365</span></strong></p>
+<p>Existe un procedimiento automatizado que provisiona las cuentas en el entorno Microsoft 365 y asigna las licencias necesarias. </p>
+<p><strong>Destinatarios: </strong>Sólo se asignarán licencias de productos asociadas a <strong>cuentas personales</strong> de los <strong>miembros activos</strong> de la comunidad universitaria.</p>
+<p>El acceso normal al portal se hará a través de la web <a href="https://office.com">https://office.com</a>. </p>
+<p>En todos los casos, deberá usarse el usuario y contraseña de la cuenta UPM.</p>
+<p><strong>AVISO:</strong> La cuenta se dará de <strong>baja</strong> cuando la relación como miembro activo con la UPM finalice (por ejemplo alumnos que pasen a egresados o personal docente que no sea renovado). Es tarea del usuario rescatar cuanta información tenga almacenada o vinculada al servicio antes de que esto ocurra.</p>
+<p> </p>
+<p><strong><span style="text-decoration: underline;">Microsoft Office</span></strong></p>
+<p>Ofrece la posibilidad de instalar Office en 5 equipos PC o Mac, en 5 <em>tablets</em> y en 5 <em>smarthphones.</em></p>
+<p> </p>
+<p><strong><span style="text-decoration: underline;">Microsoft Office OnLine</span></strong></p>
+<p>Permite editar un documento entre varios usuarios al mismo tiempo, así como el uso de Office en la nube.</p>
+<p> </p>
+<p><strong><span style="text-decoration: underline;">OneDrive</span></strong></p>
+<p>Los usuarios disponen de espacio de almacenamiento en la nube OneDrive vinculado a su cuenta UPM.</p>
+<p>Debido a cambios en la política de Microsoft en relación con la cantidad de almacenamiento puesto a disposición de las instituciones educativas, a partir de 2024 no es posible mantener de forma general la disponibilidad de 1 TB. por usuario y de forma paulatina se irán asignando distintas capacidades de almacenamiento en OneDrive a los miembros de la comunidad UPM en función de su vinculación con la misma.</p>
+<p> </p>
+<p><strong><span style="text-decoration: underline;">Skype Empresarial</span></strong></p>
+<p>Permite realizar videoconferencias para un número máximo de 250 usuarios simultáneos. Está integrado plenamente con las aplicaciones de Office, dispone de cifrado con seguridad empresarial así como de posibilidades avanzadas de configuración de las reuniones, características que la diferencian de la conocida aplicación Skype.</p>
+<p> </p>
+<p><strong><span style="text-decoration: underline;">SharePoint</span></strong></p>
+<p>Es una herramienta  para la gestión documental y el trabajo en equipo. Entre otras funcionalidades, destacan la posibilidad de crear espacios o sitios de grupo, crear documentos de Microsoft Office y guardarlos directamente en SharePoint, almacenar, organizar y compartir archivos con los otros miembros desde cualquier dispositivo, así como proteger el contenido o acceder a las distintas versiones de los documentos.</p>
+<p>Se recomienda el archivo de la información de carácter institucional -por ejemplo, actas y acuerdos de órganos colegiados-  o que deba ser objeto de especial protección -por ejemplo, datos personales- en <strong>UPMdrive,</strong> nube interna de la UPM que ofrece una capacidad de almacenamiento de 150 Gb por usuario.</p>
+<p> </p>
+<p><strong><span style="text-decoration: underline;">Teams</span></strong></p>
+<p>Es una herramienta informática para el trabajo colaborativo. Permite a los miembros de los equipos la gestión de proyectos, desarrollo de tareas y acceso a recursos comunes. Dispone de áreas y funcionalidades para compartir archivos, mantener conversaciones mediante mensajería y chat, desarrollar videoconferencias y una amplia variedad de recursos y aplicaciones.</p>
+<p> </p>
+<p><strong><span style="text-decoration: underline;">Sway<br /><br /></span></strong>Esta herramienta permite crear presentaciones personalizadas, profesionales y dinámicas de una forma sencilla y al instante debido a la existencia de multitud de plantillas disponibles y a la capacidad de añadir diseños propios. Es compatible con múltiples dispositivos y servicios en la nube. Permite la inserción de un gran variedad de contenidos: vídeos, imágenes, clips de audio, mapas, gráficos, etc.</p>
+<p><br /><strong><span style="text-decoration: underline;">Servicios de atención al usuario</span></strong></p>
+<p>El Vicerrectorado de Servicios Tecnológicos ofrece los siguientes puntos de atención y asesoramiento de usuarios:</p>
+<ul>
+<li><em> </em>Acceso a Office 365: Servicio de Infraestructura e Innovación, mediante incidencia en canal de soporte UPM (https://soporte.upm.es)</li>
+<li>Skype Empresarial: Gabinete de Tele-Educación (GATE), correo de  <a href="mailto:audiovisuales.gate@upm.es">audiovisuales.gate@upm.es</a> y extensión telefónica 70021.</li>
+<li>SharePoint, Teams y Sway: Gabinete de Tele-Educación (GATE),  correo <a href="mailto:edutic.gate@upm.es">edutic.gate@upm.es</a> y extensión telefónica 70022.</li>
+<li>UPMdrive: Servicio de Infraestructura e Innovación, correo <a href="mailto:support@cesvima.upm.es">support@cesvima.upm.es</a>.</li>
+</ul>
+<p> </p></div>
+        
+                  <ul class="sinmarca">
+                              <li>
+                                                                        <a href="/gsfs/SFS18435">                            Guía para el acceso a Office 365
+                            </a>                                                            </li>
+                              <li>
+                                                                      <a href="https://serviciosgate.upm.es/gate/listado-de-recursos/17">Recursos sobre Office 365 en GATE</a>
+                                                            </li>
+                        </ul>
+        
+        
+        
+    </div>
+  </div>
+
+    
+													<style>
+	.sinpuntos {
+		list-style:none;
+	}
+</style>
+
+    
+ 								
+				<style>
+	ul.docs-rel li{
+		list-style: none;
+	}
+</style>
+
+				<style type="text/css">
+  #subcanales .col-md-12 ul{
+    list-style: none;
+  }
+</style>
+																			<style>#barra_utilidades li span.fa {padding: 4px 10px;}</style>
+<div class="row">
+		<div id="barra_utilidades" class="col-xs-12 pull-right col-sm-1">
+			<ul>
+								<li title="Imprimir" class="col-xs-12"><a href=""><span id="print-page" class="fa fa-print"></span></a></li>
+			</ul>
+		</div>
+	</div>
+	<script>
+	$(".fa-print").click(function () {
+		window.print();
+	});
+	</script>
+
+										
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+  <div class="row">
+    <div class="col-sm-12 icons">
+      <div class="wrapper">
+        <div class="col-sm-6">
+          	<div class="iconUpm">
+				<a href="https://www.upm.es/politecnica_virtual/"><img src="/themes/comun/img/icon_pv.png" alt="Politécnica Virtual"></a>
+				<a href="https://drive.upm.es/index.php/login"><img src="/themes/comun/img/icon_UPMdrive.png" alt="UPMdrive"></a>
+				<a href="https://www.upm.es/intranet"><img src="/themes/comun/img/logo_intranet.png" alt="Intranet"></a>
+			</div><!--/.iconUpm-->
+        </div><!--/.col-sm-6-->
+        <div class="col-sm-6">
+          <div class="iconSocial">
+	<a href="https://www.facebook.com/universidadpolitecnicademadrid" aria-label="Icono facebook"><span class="fa fa-facebook"></span></a>
+	<a href="https://twitter.com/#!/La_UPM/" aria-label="Icono flickr"><span class="fa fa-twitter"></span></a>
+	<a href="http://www.youtube.com/user/UPM" aria-label="Icono youtube"><span class="fa fa-youtube-play"></span></a>
+	<a href="http://www.upm.es/e-politecnica/" aria-label="Icono epolitecnica"><span class="fa fa-wordpress"></span></a>
+	<a href="http://www.flickr.com/photos/universidadpolitecnica/" aria-label="Icono twitter"><span class="fa fa-flickr"></span></a>
+	<a href="https://www.instagram.com/somosupm/" aria-label="Icono instagram"><span class="fa fa-instagram"></span></a>
+	<a href="https://es.linkedin.com/school/universidad-politecnica-de-madrid/" aria-label="Icono Linkedin"><span class="fa fa-linkedin"></span></a>
+</div><!--/.</div>-->
+        </div><!--/.col-sm-6-->
+      </div><!--/.wrapper-->  
+    </div><!--/.col-sm-12-->
+  </div><!--/.row-->
+  <div class="row">
+    <div class="col-sm-12 creditos">
+      <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-9 menuFooter">
+    <div class="row">
+      <ul class="col-sm-4">
+                                              <li>
+                  <a href="https://www.upm.es/Portal_inv"> Portal del Investigador </a>
+                                </li>
+                                                                                      <li>
+                  <a href="https://sede.upm.es/licitaciones"> Perfil de Contratante </a>
+                                </li>
+                                                                                      <li>
+                  <a href="https://transparencia.upm.es/"> Portal de Transparencia </a>
+                                </li>
+                                                                                      <li>
+                  <a href="https://www.upm.es/contacto"> Contacto / Directorio </a>
+                                </li>
+                                      </ul>
+      <ul class="col-sm-4">
+                                                                <li>
+                  <a href="https://www.upm.es/UPM/Calidad/BQSF"> Quejas/Sugerencias/Felicitaciones </a>
+                                </li>
+                                                                                      <li>
+                  <a href="/UPM/WebUPM/Accesibilidad"> Accesibilidad </a>
+                                </li>
+                                                                                      <li>
+                  <a href="https://www.upm.es/AvisoLegal"> Aviso Legal </a>
+                                </li>
+                                                </ul>
+                    </div>
+  </div><!--/.col-sm-9-->
+
+          <style>
+div.patrocinadores { text-align:right }
+div.patrocinadores div { height: 35px; display: inline-block; text-align: center; margin: 0.2em; }
+</style>
+<div class="col-sm-3 patrocinadores ">
+  <div>
+  <a href="http://www.crue.org/">
+    <img src="/themes/comun/img/crue20.png" alt="Crue Universidades Españolas" title="Crue"/>
+  </a>
+</div>
+  <div>
+  <a href="http://www.universia.es">
+    <img src="/themes/comun/img/universia15.png" alt="Universia" title="Universia"/>
+  </a>
+</div>
+  <div>
+  <a href="https://www.upm.es/UPM/PRTR">
+    <img src="/themes/comun/img/prtr-02.png" alt="" title="prtr"/>
+  </a>
+</div>
+  <div>
+  <a href="https://web.upm.es/hrs4r/">
+    <img src="/themes/comun/img/hrs4r.png" alt="HR Excellence in Research" title="hsr4r"/>
+  </a>
+</div>
+  </div><!--/.col-sm-3-->
+
+<!--/.col-sm-6-->
+        </div><!--/.row-->
+        <div class="row">
+          <p>Universidad Politécnica de Madrid © 2026</p>
+        </div><!--/.row-->
+      </div><!--/.wrapper-->
+    </div><!--/.col-sm-12 creditos-->
+  </div><!--/.row-->  
+  
+</footer>
+</body>
+</html>
+

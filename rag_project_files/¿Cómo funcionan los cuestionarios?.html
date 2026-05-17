@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+	<base href="https://serviciosgate.upm.es/recursos/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Visor de contenido accesible de la Universidad Politécnica de Madrid">
+    <meta name="author" content="Oficina de Apoyo a la Docencia de la Universidad Politécnica de Madrid">
+    <title>¿Cómo funcionan los cuestionarios?</title>
+
+    <link rel="canonical" href="https://serviciosgate.upm.es/recursos/122/como-funcionan-los-cuestionarios">
+
+	<link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link href="./vendor/css/custom.css" rel="stylesheet">
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="./img/favicon.ico">
+	<link rel="icon" href="./img/favicon.ico">
+
+	    <style>
+
+	h3, h4, h5, h6 {
+		color: rgb(48,56,128);
+	}
+
+	#content .image-style-side {
+		max-width: 50%;
+		float: right;
+		margin-left: var(--ck-image-style-spacing);
+	}
+	#content .image.image_resized {
+		display: block;
+		box-sizing: border-box;
+	}
+
+	#contenido figure.image.image_resized > img {
+		max-width: 100%;
+		display: table;
+		margin: auto !important;
+	}
+
+	#contenido .image.image_resized > figcaption {
+		display: flex;
+        justify-content: center;
+        max-width: 100%;
+		font-size: 10pt;
+		font-family: montserrat;
+	}
+
+	#contenido .image > img {
+		display: block;
+		max-width: 100%;
+		margin: auto !important;
+		#filter: drop-shadow(0 0 0.2rem) !important;
+		margin: 1% !important;
+	}
+
+	#contenido figure {
+		width: 100% !important;
+		display: grid;
+		justify-content: center;
+		margin: auto;
+		margin-bottom: 1% !important;
+		margin-top: 0 !important;
+	}
+
+	#contenido image {
+		display: flex;
+		justify-content: center;
+	}
+
+	@media (max-width:768px){
+		#contenido .image {
+			display: block !important;
+			width: 100% !important;
+		}
+
+		#contenido figure .image.image_resized{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		img {
+		  vertical-align: middle;
+		  min-width: 50px;
+		}
+	}
+	
+	.table {
+	text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.logotipos {
+    max-width: 250px !important;  /* Limita el tamaño máximo de las imágenes */
+    height: auto;
+    display: block;
+	filter: none !important;
+}
+
+/* Estilo para el contenedor del logo y borde */
+.d-flex.align-items-center {
+    justify-content: center;  /* Centra los logos en el contenedor */
+}
+
+/* Estilo para el borde vertical con el 70% de la altura de la imagen */
+.img-border {
+    position: absolute;
+    top: 14%;  /* Empieza desde el 15% de la altura de la imagen (ajustable) */
+    left: 97%;  /* Coloca el borde a la derecha de la imagen */
+    width: 1px;
+    height: 59%;  /* Hace que el borde tenga el 70% de la altura de la imagen */
+    background-color: #fff;
+    margin-left: 10px;  /* Espacio entre la imagen y el borde */
+
+}
+
+   </style>
+  </head>
+  <body>
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-1 shadow">
+    <div class="col-12 col-md-2 col-lg-1 bg-light text-center fixed-top ms-4">
+        <a accesskey="S" class="enlace_contenido" href="/recursos/122/como-funcionan-los-cuestionarios#main" title="Ir directamente al contenido (Atajo de teclado: S)." tabindex="1">
+            Ir al contenido
+        </a>        
+    </div>
+
+    <div class="col-4 col-md-2 d-flex ms-5">
+        <div class="d-inline-block mt-4">
+            <div class="d-flex align-items-center">
+<!--                <div class="me-2 img-container">
+                    <a href="https://www.upm.es" target="_blank">
+                        <img src="/recursos/img/UPM_leyenda_BLANCO.png" class="logotipos" alt="Logotipo de la Universidad Politécnica de Madrid"/>
+
+                    </a>
+					<div class="img-border"></div>
+                </div>
+
+                <div>
+                    <a href="https://serviciosgate.upm.es" target="_blank">
+                        <img src="/recursos/img/oad_blanco.png" class="logotipos" alt="Logotipo de la Oficina de Apoyo al Docente"/>
+                    </a>
+                </div>
+-->
+<div class="me-2">
+<a href="https://serviciosgate.upm.es" target="_blank">
+                        <img src="/recursos/img/upm_oad_blanco.png" class="logotipos" alt="Logotipo de la Universidad Politécnica de Madrid y de la Oficina de Apoyo a la Docencia"/>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <button class="navbar-toggler position-absolute d-md-none collapsed mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="col-9 col-md-9 text-center text-white mt-4">
+        <h1>¿Cómo funcionan los cuestionarios?</h1>
+    </div>
+</header>
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block bg-light sidebar collapse">
+				<div class="position-sticky sidebar-sticky">
+									<h2 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase" style="color: #4B545C !important;">
+						Índice
+					</h2>
+									<ol class="list-group" style="list-style-type: none;">
+						  <li class="list-group-item d-flex align-items-start">
+						<div class="ms-2 me-auto">
+							<div class="fw-bold">
+								<a href="/recursos/122/como-funcionan-los-cuestionarios#Acceso" class="enlace-indice">Acceso</a>
+							</div>
+						</div>
+					</li>
+			  <li class="list-group-item d-flex align-items-start">
+						<div class="ms-2 me-auto">
+							<div class="fw-bold">
+								<a href="/recursos/122/como-funcionan-los-cuestionarios#Conceptos-basicos" class="enlace-indice">Conceptos básicos</a>
+							</div>
+						<ul><li>
+							<a href="/recursos/122/como-funcionan-los-cuestionarios#Antes-de-empezar" class="enlace-indice">Antes de empezar</a>
+
+							</li><li>
+							<a href="/recursos/122/como-funcionan-los-cuestionarios#Navegacion-por-el-cuestionario" class="enlace-indice">Navegación por el cuestionario</a>
+
+							</li><li>
+							<a href="/recursos/122/como-funcionan-los-cuestionarios#El-tiempo" class="enlace-indice">El tiempo</a>
+
+							</li></ul></div>
+					</li>
+			  <li class="list-group-item d-flex align-items-start">
+						<div class="ms-2 me-auto">
+							<div class="fw-bold">
+								<a href="/recursos/122/como-funcionan-los-cuestionarios#Resultados--Calificacion" class="enlace-indice">Resultados / Calificación</a>
+							</div>
+						</div>
+					</li>
+								</ol>
+				          <h2 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase" style="color: #4B545C !important;">
+					<span>Sobre este documento</span>
+					</h2>
+					<ul class="nav flex-column mb-2">
+						<li class="nav-item">
+							<a class="nav-link" href="/recursos/122/como-funcionan-los-cuestionarios#licencia">
+								<span data-feather="file-text" class="align-text-bottom"></span>
+									Licencia
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+		<main class="col-md-8 ms-sm-auto col-lg-9 px-md-4 mt-4" id="main">
+			<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-1 pb-4 mb-1 border-bottom">
+				<h2 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-2 mb-1 text-muted text-uppercase">Contenido</h2>
+				<div class="btn-toolbar mb-2 mb-md-0">
+					<div class="btn-group me-2">
+						<a href="exportar.php?id=122" class="btn btn-sm btn-outline-dark text-reset btn-exportar" target="_blank">Exportar</a>
+					</div>
+				</div>
+			</div>
+			<section id="contenido">
+				<p>El cuestionario es una actividad en la que hay que responder a un conjunto de preguntas de distintos tipos, desde la opción múltiple a preguntas de arrastrar y soltar elementos sobre texto o imágenes o preguntas abiertas que permiten incluso adjuntar archivos.</p>
+<section><h3 id="Acceso" class="pt-4">Acceso</h3>
+<p>Para entrar en un cuestionario, dentro de la asignatura a la que pertenece, se pulsa sobre su nombre.</p>
+<figure class="image"><img src="./img/media/20/thump_1754466007.png" alt="Imagen de la zona central de la asignatura en Moodle en la que aparece resaltado el cuestionario."></figure><p>&nbsp;</p></section><section><h3 id="Conceptos-basicos" class="pt-4">Conceptos básicos</h3>
+<h4 id="Antes-de-empezar" class="pt-4">Antes de empezar</h4>
+<p>Una vez dentro del cuestionario, conviene que revises varios datos, antes de pulsar sobre <strong>“Intento del cuestionario”</strong>:</p>
+<figure class="image"><img src="./img/media/20/thump_1754466584.png" alt="Imagen de la página de acceso al cuestionario en la que se muestran las instrucciones."></figure><ul>
+<li>Fechas apertura/cierre: indica el periodo durante el cual el cuestionario va a estar abierto para que puedas responderlo. Una vez se cumple la fecha de cierre ya no se podrá responder.</li>
+<li>Instrucciones: campo de información sobre el cuestionario que vas a realizar.</li>
+<li>Intentos permitidos: indicando el número de intentos que tienes. En caso de no ver este texto, no hay límite de intentos.</li>
+<li>Límite de tiempo: que tienes para entregarlo una vez lo inicies.</li>
+<li>Método de calificación: si disponemos de más de un intento para responder al cuestionario, este campo indicará cómo se calcula la calificación de este cuestionario.</li>
+</ul>
+<h4 id="Navegacion-por-el-cuestionario" class="pt-4">Navegación por el cuestionario</h4>
+<p>El cuestionario puede tener más de una página. Para pasar de una a otra hay que pulsar en <strong>“Siguiente página”</strong> en la parte inferior. Normalmente, la navegación por las páginas es libre y se puede ir hacia adelante y hacia atrás, pero también puede ser secuencial y no es posible retroceder.</p>
+<figure class="image"><img src="./img/media/20/thump_1754467745.png" alt="Imagen ya dentro del cuestionario."></figure><p>Si estamos en la última página o sólo tiene una, en lugar del botón anterior, aparecerá <strong>“Terminar intento”</strong>. Tras pulsarlo, se mostrará un resumen de las respuestas y el botón <strong>“Enviar todo y terminar”</strong> para finalizarlo.</p>
+<figure class="image"><img src="./img/media/20/thump_1754472670.png" alt="Imagenes de la entrega de un intento."></figure><p>Las respuestas se guardan automáticamente cada minuto, pero aun así, si la navegación es libre, es conveniente que pulse cada cierto tiempo el botón <strong>“Siguiente página”</strong>. Esto asegurará que sus respuestas se conserven en caso de pérdida de conexión o caducidad de la sesión del navegador.</p>
+<h4 id="El-tiempo" class="pt-4">El tiempo</h4>
+<p>Una vez inicies el cuestionario, en caso de tener límite de tiempo, éste no se detiene aunque salgas del cuestionario. En caso de cerrar, irte del cuestionario o perder la conexión, cuando vuelvas a entrar, puede que el tiempo haya terminado o que aparezca un error que te impida terminarlo.</p>
+<p>Para que tus respuestas sean guardadas y el cuestionario sea correctamente evaluado debes pulsar el botón <strong>“Enviar todo y terminar”</strong> antes de que el tiempo llegue a 0.</p>
+<figure class="image"><img src="./img/media/20/thump_1754467565.png" alt="Imagen de la pantalla del resumen del intento antes de la cofirmación del envío."></figure><p>El cuestionario también se cierra cuando llega la fecha de cierre, aunque no se haya consumido todo el tiempo disponible.</p>
+<p>Moodle comprueba el tiempo transcurrido desde la pulsación del botón <strong>“Comenzar intento”</strong> y el botón <strong>“Enviar todo y terminar”</strong>, según el reloj del servidor, el reloj que se muestra cuando respondemos sólo es una ayuda para saber el tiempo límite que resta, pero no es 100% fiable.</p></section><section><h3 id="Resultados--Calificacion" class="pt-4">Resultados / Calificación</h3>
+<p>Al finalizar el cuestionario, no siempre podrás ver tus respuestas, las respuestas correctas o la calificación obtenida, esto lo decide el docente en cada cuestionario. Si ha decidido mostrar información del cuestionario, acceder a él y pulsa sobre <strong>“Revisión”</strong> para acceder a la información de los intentos, las respuestas correctas o a la calificación obtenida en cada pregunta.</p>
+<figure class="image"><img src="./img/media/20/thump_1754474898.png" alt="Imagen que muestra la información que puede ver el estudiante una vez finalizado el intento."></figure><figure class="image"><img src="./img/media/20/thump_1754475675.png" alt="Imagen que muestra la información que puede ver el estudiante una vez finalizado el intento."></figure><figure class="image"><img src="./img/media/20/thump_1754476025.png" alt="Imagen que muestra la información que puede ver el estudiante una vez finalizado el intento."></figure></section>			</section>
+			<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+				<h2 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">Sobre este documento</h2>
+			</div>
+			<section id="informacion">
+				<p><span class="fw-bold">Última modificación: </span>Aug-2025</p>
+			</section>
+
+<section id="licencia">
+				<h3>Licencia</h3>
+				<div >
+					<p><strong>© GATE UPM.</strong></p>
+					<p>El presente manual ha sido desarrollado por el Gabinete de Tele-educación (GATE) perteneciente al Vicerrectorado para Universidad Digital de la Universidad Politécnica de Madrid (UPM).</p>
+					<p>No se permite la reproducción total o parcial de este documento, ni su incorporación a un sistema informático, ni su transmisión en cualquier forma o por cualquier medio, sea éste una reunión presencial, un medio electrónico, mecánico, mediante fotocopia, grabación ni cualquier otro método sin el permiso previo y por escrito del titular de copyright.</p>
+					<p>La infracción de los derechos mencionados puede ser constitutiva un delito contra la propiedad intelectual (artículo 270 y siguientes del Código de Penal).</p>
+					<p>Bajo Licencia de uso CC, exclusiva para ámbito docente de la UPM, se exige la mención expresa de la autoría y Copyright de GATE UPM.</p>
+					<p>Licencias Creative Commons: Reconocimiento - Sin obra derivada - No comercial</p>
+					<div class="mx-auto text-center">	
+						<img src="./img/licencia_cc.png" class="img-fluid mx-auto" alt="Licencia Creative Commons. Reconocimiento - Sin obra derivada - No comercial">
+					</div>
+				</div>
+			</section>	
+	    </main>
+	</div>
+</div>
+
+	<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
